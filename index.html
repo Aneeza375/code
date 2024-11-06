@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneeza's Nature Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('background.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            color: #333;
+            animation: fadeIn 3s ease-in-out;
+        }
+        header, footer {
+            background-color: rgba(76, 175, 80, 0.9); /* Green with opacity */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            animation: slideDown 2s ease-in-out;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+        h1 {
+            margin: 0.5em 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 2em;
+        }
+        .images img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Aneeza's Nature Page</h1>
+    </header>
+    <main>
+        <p>Discover the serenity and beauty of nature. Embrace the calm it offers.</p>
+        <div class="images">
+            <img src="nature12.jpg" alt="Nature Image 1">
+            <img src="nature2.jpg" alt="Nature Image 2">
+            <img src="nature3.jpg" alt="Nature Image 3">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aneeza's Nature Page</p>
+    </footer>
+</body>
+</html>
